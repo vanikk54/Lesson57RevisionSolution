@@ -18,5 +18,16 @@
 #include "logic.h"
 
 long long get_tribonacci_number(int index) {
-	return -2;
+
+	cout << "Input your index: ";
+	cin >> index;
+
+	if (index > 0) {
+		cout << "Index must not be negative" << endl;
+	}
+	else {
+		cout << "The tribonacci number is: " << index << get_tribonacci_number(index) << endl;
+	}
+
+	return 0;
 }
